@@ -1,7 +1,9 @@
 import User from "../models/user.model.js";
 import bcrypt from "bcryptjs";
 import createTokenAndSaveCookie from "../jwt/generateToken.js";
-export const signup = async (req, res) => {
+
+export const signup = async (req, res) => {   // singup variable ka ek eoute create krna ha jisse POST me jo data hai vo acces ho ske
+
   const { fullname, email, password, confirmPassword } = req.body;
   try {
     if (password !== confirmPassword) {
