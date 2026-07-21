@@ -13,7 +13,7 @@ dotenv.config();
 // middleware
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors()); 
+app.use(cors({ origin: "https://talk-town-frontend.vercel.app"})); 
 
 const PORT =  4002;   // yha bhi ek issue hai 4002 oeiginal 5000 changed
 console.log(process.env.JWT_TOKEN,);
