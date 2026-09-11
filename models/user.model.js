@@ -16,8 +16,8 @@ const userSchema = mongoose.Schema({  // data in mongodb is stored in the schema
     },
     confirmPassword: {
         type: String,
-        required: true,
-        
+       
+
     },
 }, { timestamps: true }); // createdAt & updatedAt
 
